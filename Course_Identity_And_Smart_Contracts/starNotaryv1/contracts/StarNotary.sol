@@ -15,5 +15,9 @@ contract StarNotary {
         starOwner = msg.sender;
         emit starClaimed(msg.sender);
     }
+
+    function changeName(string memory name) public {
+        starName = name;
+    }
     
 }
